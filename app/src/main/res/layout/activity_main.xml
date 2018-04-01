@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.example.android.restukuatno_1202150015_modul6.MainActivity">
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="150dp"
+        android:layout_height="150dp">
+        <ImageView
+
+            android:src="@drawable/minion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <EditText
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="25dp"
+        android:id="@+id/editDaftarEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_text"
+        android:hint="e-mail"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/editDaftarPass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:hint="new password"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/colorAccent"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/btnDaftar2"
+        android:onClick="btnDaftar2"
+        android:text="daftar"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
+

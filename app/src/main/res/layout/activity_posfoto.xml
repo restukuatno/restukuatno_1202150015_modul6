@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="16dp"
+    tools:context="com.example.android.restukuatno_1202150015_modul6.posfoto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ambilgambar"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="#CCffffff"
+            android:scaleType="centerInside"
+            android:src="@drawable/photo"
+            />
+
+        <Button
+            android:shadowColor="@color/colorPrimaryDark"
+            android:id="@+id/butonambilgambar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/colorAccent"
+            android:onClick="ambilgambar"
+            android:text="Choose" />
+
+        <EditText
+            android:id="@+id/editTitle"
+            android:layout_width="270dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/red"
+            android:hint="Judul "
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/editCaption"
+            android:layout_width="270dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/red"
+            android:hint="Tulis Caption di sini.."
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center|bottom"
+        android:layout_margin="20dp"
+        android:onClick="savepost"
+        android:src="@android:drawable/ic_menu_save"
+        android:tint="@color/white" />
+
+</android.support.design.widget.CoordinatorLayout>
+

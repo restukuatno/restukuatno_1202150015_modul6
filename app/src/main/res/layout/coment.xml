@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:background="@color/white"
+        android:tint="@color/colorPrimaryDark"
+        android:src="@drawable/account"
+        android:id="@+id/commentedImage"
+        android:layout_centerVertical="true"
+        android:layout_width="35dp"
+        android:layout_height="42dp" />
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:id="@+id/commenter"
+        android:layout_toRightOf="@id/commentedImage"
+        android:textColor="@color/white"
+        android:text="commenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="inidiakomentarnya hehe"
+        android:id="@+id/comments"
+        android:layout_below="@id/commenter"
+        android:layout_toRightOf="@id/commentedImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
